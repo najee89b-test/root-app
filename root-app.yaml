@@ -6,14 +6,11 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
+  project: default
   source:
-    repoURL: https://github.com/najee89b-test/root-app
+    path: apps
+    repoURL: https://github.com/argoproj/argocd-example-apps.git
     targetRevision: HEAD
-    helm:
-      releaseName: root
-      valueFiles:
-      - values-prod.yaml
