@@ -11,6 +11,5 @@ spec:
     namespace: argocd
     server: https://kubernetes.default.svc
   source:
-    path: guestbook
     repoURL: https://github.com/najee89b-test/root-app
     targetRevision: HEAD
