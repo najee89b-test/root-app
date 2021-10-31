@@ -6,3 +6,10 @@ applications:
   guestbook:
     repositoryURL: https://github.com/argoproj/argocd-example-apps
     repositoryPath: guestbook
+
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/argoproj/argocd-example-apps
+    targetRevision: HEAD

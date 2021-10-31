@@ -13,3 +13,7 @@ spec:
   source:
     repoURL: https://github.com/najee89b-test/root-app
     targetRevision: HEAD
+    helm:
+      releaseName: root
+      valueFiles:
+      - values-prod.yaml
